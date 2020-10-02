@@ -87,11 +87,9 @@ class HomeState extends State<Home> {
               print(somar());
               setState(somar);
             },
-            child: Text(
-              'Somar',
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            child: Icon(
+              Icons.add,
+              size: 60,
             ),
           ),
           RaisedButton(
@@ -99,11 +97,9 @@ class HomeState extends State<Home> {
               print(multiplicar());
               setState(multiplicar);
             },
-            child: Text(
-              'Multiplicar ',
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            child: Icon(
+              Icons.clear,
+              size: 60,
             ),
           ),
           RaisedButton(
@@ -111,11 +107,9 @@ class HomeState extends State<Home> {
               print(subtrair());
               setState(subtrair);
             },
-            child: Text(
-              'Subtrair ',
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            child: Icon(
+              Icons.remove,
+              size: 60,
             ),
           ),
           RaisedButton(
@@ -123,21 +117,28 @@ class HomeState extends State<Home> {
               print(dividir());
               setState(dividir);
             },
-            child: Text(
-              'Dividir ',
-              style: TextStyle(
-                fontSize: 20,
+            child: Icon(
+              Icons.border_horizontal,
+              size: 60,
+            ),
+          ),
+          Center(
+            child: Container(
+              margin: const EdgeInsets.all(10),
+              color: Colors.blue,
+              width: 500,
+              height: 150,
+              child: Text(
+                this.resp,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 50,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
-          Text(
-            this.resp,
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.green,
-              fontWeight: FontWeight.bold,
-            ),
-          )
         ],
       ),
     );
