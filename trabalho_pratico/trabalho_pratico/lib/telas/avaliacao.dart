@@ -8,12 +8,6 @@ class Avaliar extends StatefulWidget {
 }
 
 class AvaliarState extends State<Avaliar> {
-  int contador1 = 0;
-  int contador2 = 0;
-  int contador3 = 0;
-  int contador4 = 0;
-  int contador5 = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,16 +34,8 @@ class AvaliarState extends State<Avaliar> {
               ),
               Row(
                 children: [
-                  FlatButton(
-                      onPressed: () {
-                        contador1 = 1;
-                      },
-                      child: Text("SIM")),
-                  FlatButton(
-                      onPressed: () {
-                        contador1 = 0;
-                      },
-                      child: Text("NAO")),
+                  FlatButton(onPressed: () {}, child: Text("SIM")),
+                  FlatButton(onPressed: () {}, child: Text("NAO")),
                 ],
               ),
               SizedBox(
@@ -62,16 +48,8 @@ class AvaliarState extends State<Avaliar> {
               ),
               Row(
                 children: [
-                  FlatButton(
-                      onPressed: () {
-                        contador2 = 1;
-                      },
-                      child: Text("SIM")),
-                  FlatButton(
-                      onPressed: () {
-                        contador2 = 0;
-                      },
-                      child: Text("NAO")),
+                  FlatButton(onPressed: () {}, child: Text("SIM")),
+                  FlatButton(onPressed: () {}, child: Text("NAO")),
                 ],
               ),
               SizedBox(
@@ -83,16 +61,8 @@ class AvaliarState extends State<Avaliar> {
               ),
               Row(
                 children: [
-                  FlatButton(
-                      onPressed: () {
-                        contador4 = 1;
-                      },
-                      child: Text("SIM")),
-                  FlatButton(
-                      onPressed: () {
-                        contador4 = 0;
-                      },
-                      child: Text("NAO")),
+                  FlatButton(onPressed: () {}, child: Text("SIM")),
+                  FlatButton(onPressed: () {}, child: Text("NAO")),
                 ],
               ),
               SizedBox(
@@ -104,16 +74,8 @@ class AvaliarState extends State<Avaliar> {
               ),
               Row(
                 children: [
-                  FlatButton(
-                      onPressed: () {
-                        contador4 = 1;
-                      },
-                      child: Text("SIM")),
-                  FlatButton(
-                      onPressed: () {
-                        contador4 = 0;
-                      },
-                      child: Text('NAO'))
+                  FlatButton(onPressed: () {}, child: Text("SIM")),
+                  FlatButton(onPressed: () {}, child: Text('NAO'))
                 ],
               ),
               Text("Você esta satisfeito com o aplicativo?"),
@@ -122,16 +84,8 @@ class AvaliarState extends State<Avaliar> {
               ),
               Row(
                 children: [
-                  FlatButton(
-                      onPressed: () {
-                        contador5 = 1;
-                      },
-                      child: Text("SIM")),
-                  FlatButton(
-                      onPressed: () {
-                        contador5 = 0;
-                      },
-                      child: Text('NAO'))
+                  FlatButton(onPressed: () {}, child: Text("SIM")),
+                  FlatButton(onPressed: () {}, child: Text('NAO'))
                 ],
               ),
             ],
